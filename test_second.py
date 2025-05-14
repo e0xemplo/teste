@@ -35,7 +35,7 @@ with sync_playwright() as p:
     browser = p.chromium.launch(headless=False)
     context = browser.new_context()
     page = context.new_page()
-    page.goto('https://thehackernews.com/', wait_until="domcontentloaded")
+    page.goto('', wait_until="domcontentloaded")
     results = []
     ultima_pagina_com_mes = False  
 
